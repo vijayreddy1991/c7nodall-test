@@ -1,0 +1,18 @@
+jobs:
+  - name: c7nodall-testing
+    type: runSh
+    steps:
+      - TASK:
+          runtime:
+            options:
+              imageName: "drydock/c7nodall"
+              imageTag: master
+          script:
+         
+            - grunt --version
+            - mocha --version    
+            - vows --version
+            - casperjs --version
+            - bower --version
+            - nvm list
+            - npm --version
