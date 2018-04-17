@@ -17,8 +17,4 @@ jobs:
             - bower --version
             - npm --version
             - node --version
-            - nvm ls v5.12.0
-            - nvm ls v6.14.1
-            - nvm ls v7.10.1
-            - nvm ls v8.11.1
-            - nvm ls v9.11.1
+            - nvm list
