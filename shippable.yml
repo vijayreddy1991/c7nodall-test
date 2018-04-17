@@ -6,13 +6,19 @@ jobs:
           runtime:
             options:
               imageName: "drydock/c7nodall"
-              imageTag: v6.3.4
+              imageTag: master
           script:
          
             - grunt --version
             - mocha --version    
             - vows --version
             - casperjs --version
+            - phantomjs --version
             - bower --version
-            - nvm list
             - npm --version
+            - node --version
+            - nvm ls v5.12.0
+            - nvm ls v6.14.1
+            - nvm ls v7.10.1
+            - nvm ls v8.11.1
+            - nvm ls v9.11.1
