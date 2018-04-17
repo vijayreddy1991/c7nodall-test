@@ -6,7 +6,7 @@ jobs:
           runtime:
             options:
               imageName: "drydock/c7nodall"
-              imageTag: master
+              imageTag: v6.3.4
           script:
          
             - grunt --version
